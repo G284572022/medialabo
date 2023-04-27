@@ -1,0 +1,15 @@
+body{
+    background-color:lightblue;
+}
+h1{
+    font-size:50px;
+}
+h2{
+    color :white;
+    font-size: medium;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    height: 50px;
+}
