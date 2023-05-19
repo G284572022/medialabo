@@ -80,8 +80,4 @@ let data = {
 };
 
 /////////////////// 課題3-2 はここから書き始めよう
-console.log(data.g1.name);
-console.log(data.g1.title);
-console.log(data.g1.subtitle);
-console.log(data.g1.content);
-console.log(data.g1.act);
+console.log(data.list.area);
