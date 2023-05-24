@@ -80,4 +80,15 @@ let data = {
 };
 
 /////////////////// 課題3-2 はここから書き始めよう
-console.log(data.list.area);
+let jikan1 = data.list.g1[0];
+console.log(jikan1.start_time);
+console.log(jikan1.end_time);
+console.log(data.list.g1[0].service.name);
+console.log(jikan1.title);
+console.log(jikan1.subtitle);
+let jikan2 = data.list.g1[1];
+console.log(jikan2.start_time);
+console.log(jikan2.end_time);
+console.log(data.list.g1[0].service.name);
+console.log(jikan2.title);
+console.log(jikan2.subtitle);
