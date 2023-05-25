@@ -80,6 +80,7 @@ let data = {
 };
 
 /////////////////// 課題3-2 はここから書き始めよう
+
 let jikan1 = data.list.g1[0];
 console.log(jikan1.start_time);
 console.log(jikan1.end_time);
@@ -92,3 +93,53 @@ console.log(jikan2.end_time);
 console.log(data.list.g1[0].service.name);
 console.log(jikan2.title);
 console.log(jikan2.subtitle);
+
+let p6=document.querySelector('h2#time1'); 
+let j = document.createElement('p'); 
+j.textContent=jikan1.start_time; 
+p6.insertAdjacentElement('afterend',j); 
+
+let p7=document.querySelector('h2#time1');
+let a = document.createElement('p');
+a.textContent=jikan1.end_time;
+p7.insertAdjacentElement('afterend',a);
+
+let p8=document.querySelector('h2#time1');
+let b = document.createElement('p');
+b.textContent=data.list.g1[0].service.name;
+p8.insertAdjacentElement('afterend',b);
+
+let p9=document.querySelector('h2#time1');
+let c = document.createElement('p');
+c.textContent=jikan1.title;
+p9.insertAdjacentElement('afterend',c);
+
+let p10=document.querySelector('h2#time1');
+let d = document.createElement('p');
+d.textContent=jikan1.subtitle;
+p10.insertAdjacentElement('afterend',d);
+
+let p11=document.querySelector('h2#time2');
+let e = document.createElement('p');
+e.textContent=jikan2.start_time;
+p11.insertAdjacentElement('afterend',e);
+
+let p12=document.querySelector('h2#time2');
+let f = document.createElement('p');
+f.textContent=jikan2.end_time;
+p12.insertAdjacentElement('afterend',f);
+
+let p13=document.querySelector('h2#time2');
+let g = document.createElement('p');
+g.textContent=data.list.g1[0].service.name;
+p13.insertAdjacentElement('afterend',g);
+
+let p14=document.querySelector('h2#time2');
+let h = document.createElement('p');
+h.textContent=jikan2.title;
+p14.insertAdjacentElement('afterend',h);
+
+let p15=document.querySelector('h2#time2');
+let i = document.createElement('p');
+i.textContent=jikan2.subtitle;
+p15.insertAdjacentElement('afterend',i);
