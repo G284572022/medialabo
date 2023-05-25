@@ -20,24 +20,31 @@ function hantei() {
   let yoso = 4;
   
   // 課題3-1: 正解判定する
-  let i;
-  for(i=1;i<=5;i++){
-    console.log(i+"回目の予想:"+yoso);
-    if(i>=4){
+  for(kaisu;kaisu<=3;kaisu++){
+    console.log(kaisu+"回目の予想:"+yoso);
+    if(kaisu>=4){
       console.log("答えは"+kotae+"でした.すでにゲームは終わっています");
     }
     if(kotae == yoso){
-      console.log("正解ですお.めでとう!");
-      }else if(i==3){
+      console.log("正解ですおめでとう!");
+      }else if(kaisu==3){
         console.log("まちがい．残念でした答えは "+kotae +" です．");
       }else if (kotae>yoso){
         console.log("まちがい．答えはもっと大きいですよ");
     }else if(kotae<yoso){
       console.log("まちがい．答えはもっと小さいですよ");
     }
-  
-  }
 
+  }
+  let s5 = document.querySelector('span#kaisu'); 
+  s5.textContent = kaisu;
+  let s6 = document.querySelector('span#answer');
+  s6.textContent = yoso;
+  let s8 = document.querySelector('span#answers');
+  if(kaisu>=4){
+    s8.textContent = '答えは'+kotae+'でした.すでにゲームは終わっています';
+ 
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
+}
 }
