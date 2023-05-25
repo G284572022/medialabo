@@ -20,7 +20,8 @@ function hantei() {
   let yoso = 4;
   
   // 課題3-1: 正解判定する
-  for(let i=1;i<=5;i++){
+  let i;
+  for(i=1;i<=5;i++){
     console.log(i+"回目の予想:"+yoso);
     if(i>=4){
       console.log("答えは"+kotae+"でした.すでにゲームは終わっています");
