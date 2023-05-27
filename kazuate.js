@@ -1,4 +1,3 @@
-
 // 答え
 let kotae = Math.floor(Math.random()*10) + 1;
 console.log('答え（デバッグ用）: ' + kotae);
@@ -21,7 +20,7 @@ function hantei() {
   
   // 課題3-1: 正解判定する
   for(kaisu;kaisu<=3;kaisu++){
-    console.log(kaisu+"回目の予想:"+yoso);
+    console.log(kaisu+1+"回目の予想:"+yoso);
     if(kaisu>=4){
       console.log("答えは"+kotae+"でした.すでにゲームは終わっています");
     }
@@ -40,11 +39,8 @@ function hantei() {
   s5.textContent = kaisu;
   let s6 = document.querySelector('span#answer');
   s6.textContent = yoso;
-  let s8 = document.querySelector('span#answers');
-  if(kaisu>=4){
-    s8.textContent = '答えは'+kotae+'でした.すでにゲームは終わっています';
- 
+  let s10 = document.querySelector('p#result'); 
+  s10.textContent = '答えは'+kotae+'でした.すでにゲームは終わっています'; 
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
-}
 }
