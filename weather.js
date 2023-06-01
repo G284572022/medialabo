@@ -47,7 +47,3 @@ let data = {
 
 ////////// 課題3-2 ここからプログラムを書こう
 console.log(data.name);
-let p10=document.querySelector('data#name');
-let d = document.createElement('p');
-d.textContent=jikan1.subtitle;
-p10.insertAdjacentElement('afterend',d);

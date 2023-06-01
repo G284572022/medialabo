@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>演習1-4</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+        <script src="ajax-demo.js" defer></script>
         <link rel="stylesheet" href="project.css">
         <script src="weather.js" defer></script>
         <label for="santaro">天気</label>
@@ -14,7 +16,9 @@
         <button id="btn">コンソールに表示</button>
     </head>
   <body>
-    <h1>NHKの番組表</h1>
+    <p>以下のボタンを押すと，サーバに通信します．結果はコンソールに出力します．</p>
+    <button id="sendRequest">通信</button>
+    <h1>各地の天気</h1>
     <h2 id="time1">天気１</h2>
     <h2 id="time2">天気２</h2>
   </body>
