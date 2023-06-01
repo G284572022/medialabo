@@ -46,15 +46,21 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-console.log(data.name);
-/*let b = document.querySelector('#sendRequest');
-b.addEventListener('click', sendRequest);
+// 1. イベントハンドラの登録
 
+let b = document.querySelector('#print');
+b.addEventListener('click', greeting);
 
+// 2. イベントハンドラの定義
+function greeting() {
+    let i = document.querySelector('input[name="shimei"]');
+    let bango = i.value;       // ユーザが記入した文字列
+    console.log(bango);
+}
 // 通信を開始する処理
 function sendRequest() {
     // URL を設定
-    let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/360630.json';
+    let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+bango+'-'+'-j.json';
 
     // 通信開始
     axios.get(url)
@@ -72,6 +78,11 @@ function showResult(resp) {
     if (typeof data === 'string') {
         data = JSON.parse(data);
     }
+     // data をコンソールに出力
+     console.log(data);
+
+     // data.x を出力
+     console.log(data.name);
   }
   // 通信エラーが発生した時の処理
 function showError(err) {
@@ -81,4 +92,14 @@ function showError(err) {
 // 通信の最後にいつも実行する処理
 function finish() {
   console.log('Ajax 通信が終わりました');
-}*/
+}
+
+
+console.log(data.name);
+console.log(data.weather[0].description);
+console.log(data.main.temp_max);
+console.log(data.main.temp_min);
+let p = document.querySelector('h2#time1'); 
+let a = document.createElement('p'); 
+a.textContent=data.name; 
+p.insertAdjacentElement('afterend',a); 
