@@ -29,7 +29,7 @@ function hantei() {
         if(yoso==kotae){
           s10.textContent = ("正解ですおめでとう!");
         }else{
-          s10.textContent=("まちがい．残念でした答えは "+kotae +" です．");
+          s10.textContent=("まちがい。残念でした答えは "+kotae +" です．");
         }
       }else{
         if(kotae==yoso){
