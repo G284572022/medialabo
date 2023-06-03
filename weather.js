@@ -46,54 +46,48 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-// 1. イベントハンドラの登録
+let b = document.querySelector('button#kotae');
+b.addEventListener('click',hantei);
+let s10 = document.querySelector('p#result'); 
+function hantei() {
+  let i = document.querySelector('input[name="kazuate"]');
+  let s = Number(i.value);
+      // URL を設定
+      let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+s+'-j.json';
 
-let b = document.querySelector('#print');
-b.addEventListener('click', greeting);
-
-// 2. イベントハンドラの定義
-function greeting() {
-    let i = document.querySelector('input[name="shimei"]');
-    let bango = i.value;       // ユーザが記入した文字列
-    console.log(bango);
-}
-// 通信を開始する処理
-function sendRequest() {
-    // URL を設定
-    let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+bango+'-'+'-j.json';
-
-    // 通信開始
-    axios.get(url)
-        .then(showResult)   // 通信成功
-        .catch(showError)   // 通信失敗
-        .then(finish);      // 通信の最後の処理
-}
-
-// 通信が成功した時の処理
-function showResult(resp) {
-    // サーバから送られてきたデータを出力
-    let data = resp.data;
-
-    // data が文字列型なら，オブジェクトに変換する
-    if (typeof data === 'string') {
-        data = JSON.parse(data);
-    }
-     // data をコンソールに出力
-     console.log(data);
-
-     // data.x を出力
-     console.log(data.name);
+      // 通信開始
+      axios.get(url)
+          .then(showResult)   // 通信成功
+          .catch(showError)   // 通信失敗
+          .then(finish);      // 通信の最後の処理
   }
+  
+  // 通信が成功した時の処理
+  function showResult(resp) {
+      // サーバから送られてきたデータを出力
+      let data = resp.data;
+  
+      // data が文字列型なら，オブジェクトに変換する
+      if (typeof data === 'string') {
+          data = JSON.parse(data);
+      }
+  
+      // data をコンソールに出力
+      console.log(data.name);
+  
+      // data.x を出力
+      console.log(data.name);
+  }
+  
   // 通信エラーが発生した時の処理
-function showError(err) {
-  console.log(err);
+  function showError(err) {
+      console.log(err);
+  }
+  
+  // 通信の最後にいつも実行する処理
+  function finish() {
+      console.log('Ajax 通信が終わりました');
 }
-
-// 通信の最後にいつも実行する処理
-function finish() {
-  console.log('Ajax 通信が終わりました');
-}
-
 
 console.log(data.name);
 console.log(data.weather[0].description);
