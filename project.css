@@ -1,5 +1,7 @@
 body{
     background-color:lightblue;
+    background-image: url("晴れ.jpg");
+    background-size: cover;
 }
 h1{
     font-size:50px;
