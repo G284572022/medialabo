@@ -1,19 +1,44 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>演習1-4</title>
-        <link rel="stylesheet" href="project.css">
+  <head>
+  <meta charset="utf-8">
+  <title>世界の天気</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+  <script src="weather.js" defer=""></script>
+  <link rel="stylesheet" type="text/css" href="project.css">
 
+</head>
+<body>
+  <h1>
+    <p>世 界 の 天 気</p>
+  </h1>
+  <label for="toshi">選択した都市の天候情報を表示します</label>
+  <select name="mati" id="mati">
+      <option value="360630">カイロ(エジプト)</option>
+      <option value="524901">モスクワ(ロシア)</option>
+      <option value="993800">ヨハネスブルク(南アフリカ)</option>
+      <option value="1816670">北京(中華人民共和国)</option>
+      <option value="1850147">東京(日本)</option>
+      <option value="1880252">シンガポール</option>
+      <option value="2147714">シドニー(オーストラリア)</option>
+      <option value="2643743">ロンドン(イギリス)</option>
+      <option value="2968815">パリ(フランス)</option>
+      <option value="3451189">リオデジャネイロ(ブラジル)</option>
+      <option value="5128581">ニューヨーク(アメリカ合衆国)</option>
+      <option value="5368361">ロサンゼルス(アメリカ合衆国)</option>
+  </select>
+  <button id="botton">検索</button>
+  <h3>
+  <div class="list">
+    <div class="toshimei">都市名: <span id="a1"></span></div>
+    <div class="toshimei">天気: <span id="a2"></span></div>
+    <div class="syousai">平均気温: <span id="a7"></span></div>
+    <div class="syousai">最高気温: <span id="a5"></span></div>
+    <div class="syousai">最低気温: <span id="a6"></span></div>
+    <div class="syousai">湿度: <span id="a8"></span></div>
+    <div class="syousai">風向: <span id="a3"></span></div>
+    <div class="syousai">風向き: <span id="a4"></span></div>
+  </div>
+  </h3>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
-        <script src="weather.js" defer></script>
-        <label for="kazuate">数を指定 </label>
-        <input type="text" name="kazuate" id="kazuate" size="10">
-        <button id="kotae">表示</button>
-    </head>
-  <body>
-    <h2 id="time1">天気１</h2>
-    <h2 id="time2">天気２</h2>
-  </body>
- </html>
+</body>
+</html>

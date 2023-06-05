@@ -1,17 +1,44 @@
-body{
-    background-color:lightblue;
+body {
     background-image: url("晴れ.jpg");
-    background-size: cover;
-}
-h1{
-    font-size:50px;
-}
-h2{
-    color :white;
-    font-size: medium;
-    border: 3px solid black;
-    padding: 10px;
-    margin: 5px;
-    width: 200px;
-    height: 50px;
-}
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  select {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  button {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+  .list {
+    display: inline-block;
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  .toshimei,
+  .syousai {
+    margin-bottom: 10px;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  h3{
+    font-size:30;
+  }
