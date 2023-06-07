@@ -100,8 +100,8 @@ function showResult(resp) {
     tenki6.textContent=data.main.temp_min;
     let tenki7=document.querySelector("span#a7");
     tenki7.textContent=data.main.temp;
-    let tenki8 = document.querySelector("span#a9");
-    tenki8.textContent=data.main.humidity;
+    let tenki9 = document.querySelector("span#a9");
+    tenki9.textContent=data.main.humidity;
 }
 
 // 通信エラーが発生した時の処理
