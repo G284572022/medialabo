@@ -91,9 +91,9 @@ function showResult(resp) {
     let tenki2=document.querySelector("span#a2");
     tenki2.textContent=data.weather[0].description;
     let tenki3=document.querySelector("span#a3");
-    tenki3.textContent=data.coord.lon;
+    tenki3.textContent=data.wind.speed;
     let tenki4=document.querySelector("span#a4");
-    tenki4.textContent=data.coord.lat;
+    tenki4.textContent=data.wind.deg;
     let tenki5=document.querySelector("span#a5");
     tenki5.textContent=data.main.temp_max;
     let tenki6=document.querySelector("span#a6");
