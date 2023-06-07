@@ -100,7 +100,7 @@ function showResult(resp) {
     tenki6.textContent=data.main.temp_min;
     let tenki7=document.querySelector("span#a7");
     tenki7.textContent=data.main.temp;
-    let tenki8 = document.querySelector("span#a8");
+    let tenki8 = document.querySelector("span#a9");
     tenki8.textContent=data.main.humidity;
 }
 
